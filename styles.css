@@ -4,6 +4,15 @@
 }
 
     .titulo_secundario{
-    background-color: #2F4F2F;
+    background-color: #2F4F2F;  
     color: white;
+}
+
+#layout{
+    display: flex;
+    gap: 10px;
+}
+
+.rodape{
+    text-align: center;
 }

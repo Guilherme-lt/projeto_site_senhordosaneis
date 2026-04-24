@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 #titulo_principal{
     background-color: #8B6F1E;
     color: white;
@@ -9,10 +11,67 @@
 }
 
 #layout{
+    font-size: 1em; /*Estilo de fonte*/
     display: flex;
-    gap: 10px;
+    flex-direction: column; /*Usado para definir a direção dos elementos que são filhos de um display flex*/
+    font-style: normal; /*Estilo da fonte: normal - italic - oblique*/
+    line-height: 30px; /*Espaçamento entre linhas*/
+    font-weight: 400; /*Negrito em css 100 a 900 bold e bolder*/
+    text-transform: none; /*Capitalização do texto: uppercase - lowercase - capitalize*/
+    text-decoration: none; /*Sublinhado de texto: underline ou overline double - dashed - dotted - wavy - none*/
+    word-spacing: 5px; /*Espaçamento entre palavras*/
+    letter-spacing: none; /*Espaçamento entre letras*/
+    text-indent: 20px; /*Espaçamento de paragrafo primeira linha*/
+    text-align: justify; /*Alinhamento do texto: left - right - center e justify*/
+
+    /*border-style: dashed; /*Estilo de borda: solid - dashed - dotted - double - groove - ridge - inset - outset - none
+    border-width: 5px; /*Espessura da borda
+    border-color: rgb(52, 235, 164); /*Cor da borda*/
+    border: dashed 5px rgb(52, 235, 164); /*Definir estilo, espessura e cor da borda numa mesma linha*/
+    border-top: dotted 10px rebeccapurple; /*Definir estilo, espessura e cor da borda somente para a borda superior*/
+    border-left: dotted 20px red; /*Definir estilo, espessura e cor da borda somente para a borda esquerda*/
+    border-bottom: solid 15px #fff000;
+    /*border-right: estilizar lado direito da borda*/
+    border-radius: 50px; /*Arrendondar cantos da borda - px / % */
+    margin: 20px; /*Margem do lado de FORA da borda*/
+    margin-left: 20px; /*Margem a esquerda fora da borda*/
+    margin-right: 20px; /*Margem a direita fora da borda*/
+    margin-bottom: 20px; /*Margem de baixo fora da borda*/
+    margin-top: auto; /*Margem de cima fora da borda*/
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
+
+nav a{
+    text-decoration: none;
+}
+
+/*.teste_display{
+    background-color: orange;
+    display: inline;
+    width: 500px;
+}*/
 
 .rodape{
     text-align: center;
+}
+
+body{
+    background-color: #000000; /*Cor de fundo do elemento do HTML*/
+    color: rgb(255, 255, 255);/*Cor da fonte*/
+    /*fonte-family: Arial, Helvetica, sans-serif    Fonte de texto, ordens de procedencia*/
+    font-family: "Montserrat", sans-serif; /*Definir fonte do texto usando o Google Fonts*/
+    font-size: 16px; /*Tamanho da fonte*/
+    font-style: normal; /*Estilo da fonte italic - oblique - normal*/
+    line-height: 20px; /*Espaçamento de linhas*/
+    font-weight: 400; /*Negrito no CSS*/
+    text-transform: none; /*Captitalização da fonte: lowercase, uppercase, capitalize*/
+    /*text-decoration: none; /*Sublinhado do texto: underline, overline, line-through, none*/
+    word-spacing: none; /*Espaçamento entre letras*/
+    letter-spacing: 2px; /*Espaçamento entre letras*/
+    text-indent: 20px; /*Espaçamento de identação da primeira linha dos paragrafos*/
+    text-align: justify; /*Alinhamento do texto: left, right, center, justify*/
 }

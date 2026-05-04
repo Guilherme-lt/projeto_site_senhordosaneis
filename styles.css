@@ -75,3 +75,59 @@ body{
     text-indent: 20px; /*Espaçamento de identação da primeira linha dos paragrafos*/
     text-align: justify; /*Alinhamento do texto: left, right, center, justify*/
 }
+
+#teste_estilo_lista_ul{
+  list-style-type: none; /*disc, circle, square, none define o estilo de marcador da lista não ordenada (UL)*/
+}
+
+#teste_estilo_lista_ol{
+    /*list-style-type: upper-alpha; /*decimal, lower-roman, upper-roman, lower-greek, lower-alpha, upper-alpha - define o estilo de marcadores de listas ordenadas*/
+    list-style-image: url(img/seta_direita_vermelha.png);
+}
+
+
+li{
+    border: solid 3px orange;
+    list-style-position: outside; /*Ele serve para dizer ao navegador se o marcador da lista faz parte ou não do texto da lista: inside e outside*/
+}
+
+#impacto{
+    /*background: url(img/senhordosaneis_fundo.jpg) no-repeat; /*Definir imagem de fundo, forma de repetição, posição e fixação em uma única linha*/
+
+    background-image: url(img/senhordosaneis_fundo.jpg); /*Carrega imagem ao fundo do elemento HTML*/
+    background-repeat: no-repeat; /*Configura a forma como a imagem ira repetir ao fundo do elemento HTML - no-repeat, repeat, repeat-y, repeat-x, repeat*/
+    /*background-position: center; /*Configura a posição da imagem ao fundo do elemento HTML, pode dois ao mesmo tempo - left, right, center, top, bottom
+    width: 2000px;
+    height: 1500px;*/
+    background-size: cover; /*Serve para definir COMO a imagem sera exibida ao fundo do elemento HTML - cover, contain, auto, 100px 200px*/
+    background-attachment: fixed; /*Serve para definir se a imagem de fundo ira rolar junto com o conteúdo da página ou se ela ficara fixa - scroll, fixed, local*/
+    text-shadow: 3px 3px 2px red; /*Sombra do texto: horizontal, vertical, blur, cor*/
+    position: relative;
+}
+.noticia{
+    border: solid 3px white;
+    width: 200px;
+    position: fixed; /*Define o posicionamento atras ou na frente dos elementos HTML: fixed, relative, absolute, static*/
+    height: 100px;
+    overflow: hidden; /*Trata o comportamento de quando por exemplo um texto passa das bordas de um elemento HTML: visible, hidden, scroll, auto*/
+    box-shadow: 3px 3px 3px 3px orange; /*Sombra da caixa: horizontal, vertical, blur, spread, cor*/
+}
+
+.um{
+    background-color: blue;
+    top: 0px;
+    left: 30px;
+    z-index: 3; /*Define a ordem de sobreposição dos elementos HTML, quanto maior o valor mais na frente ele fica*/
+}
+
+.dois{
+    background-color: red;
+    top: 40px;
+    left: 70px;
+}
+
+.tres{
+    background-color: green;
+    top: 80px;
+    left: 100px;
+}

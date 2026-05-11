@@ -47,6 +47,35 @@
 
 nav a{
     text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color: black;
+    opacity: 0.7; /*Opacidade do elemento HTML: 0 a 1, quanto menor o valor mais transparente ele fica*/
+}
+
+.transicao{
+    background-color: white;
+    border: solid 3px red;
+    color: black;
+    width: 300px;
+    height: 300px;
+    transition-duration: 1.5s;/*Define a duração da transição de um elemento HTML, ou seja, o tempo que leva para ocorrer a mudança de um estado para outro*/
+    transition-property: all; /*Define quais propriedades do elemento */
+    transition-delay: 0.5s; /*Define o tempo de atraso para o início da transição de um elemento HTML, ou seja, o tempo que leva para começar a mudança de um estado para outro*/
+    transition-timing-function: ease-in-out; /*Define a velocidade da transição de um elemento HTML, ou seja, a forma como a mudança de um estado para outro ocorre: linear, ease, ease-in, ease-out, ease-in-out, step-start, step-end*/
+}
+
+.transicao:hover{
+    background-color: pink;
+    width: 600px;
+    color: blue;
+}
+
+#email:focus{
+    background-color: green;
+    color: white;
 }
 
 /*.teste_display{
@@ -111,6 +140,39 @@ li{
     height: 100px;
     overflow: hidden; /*Trata o comportamento de quando por exemplo um texto passa das bordas de um elemento HTML: visible, hidden, scroll, auto*/
     box-shadow: 3px 3px 3px 3px orange; /*Sombra da caixa: horizontal, vertical, blur, spread, cor*/
+}
+
+h1{
+    animation-name: multicolor; /*Define o nome da animação a ser aplicada ao elemento HTML*/
+    animation-duration: 2s; /*Define a duração da animação, ou seja, o tempo que leva para ocorrer a mudança de um estado para outro*/
+    animation-delay: 2s; /*Define o tempo de atraso para o início da animação, ou seja, o tempo que leva para começar a mudança de um estado para outro*/
+    animation-fill-mode: both; /*Define o comportamento da animação após a sua conclusão: none, forwards, backwards, both*/
+    animation-iteration-count: infinite; /*Define o número de vezes que a animação deve ser executada: infinite, 1, 2, 3...*/
+}
+
+@keyframes multicolor{
+    from{color: red;}
+    to{color: blue;}
+    /*0%{color: red;}
+    25%{color: blue;}
+    50%{color: green;}
+    75%{color: yellow;}
+    100%{color: blue;}*/
+}
+
+.animacao img{
+    display: block;
+    animation-name: foguete; /*Define o nome da animação a ser aplicada ao elemento HTML*/
+    animation-duration: 5s; /*Define a duração da animação, ou seja, o tempo que leva para ocorrer a mudança de um estado para outro*/
+    animation-iteration-count: infinite; /*Define o número de vezes que a animação deve ser executada: infinite, 1, 2, 3...*/
+}
+
+@keyframes foguete{
+    0%{margin-left: 0%; transform: rotate(10deg);} /*Transformação de rotação: rotate(angulo)*/
+    25%{margin-left: 80%; transform: rotate(80deg);}
+    50%{margin-left: 80%; transform: rotate(-120deg);}
+    75%{margin-left: 0%; transform: rotate(-120deg);}
+    100%{margin-left: 0%; transform: rotate(0deg);}
 }
 
 .um{
